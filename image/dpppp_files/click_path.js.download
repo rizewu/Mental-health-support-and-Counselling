@@ -1,0 +1,1 @@
+jQuery(document).ready(function($){$.ajax({url:frontend_ajax_object.ajaxurl,type:'get',cache:false,data:{'action':'cpact','path':$(location).attr('pathname')},success:function(response){var json=$.parseJSON(response);var cp_php_session=json.sessionID;}});});
